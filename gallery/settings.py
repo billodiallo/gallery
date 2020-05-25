@@ -95,7 +95,7 @@ if config('MODE')=="dev":
 # production
 else:
    DATABASES = {
-       'default': gallery_database_url.config(
+       'default': dj_database_url.config(
            default=config('DATABASE_URL')
        )
    }
