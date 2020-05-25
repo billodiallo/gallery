@@ -76,8 +76,7 @@ WSGI_APPLICATION = 'gallery.wsgi.application'
 
 
 ****************
-***********77777
-444444444
+
 
 MODE=config("MODE", default='dev')
 SECRET_KEY = config('SECRET_KEY')
