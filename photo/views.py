@@ -18,18 +18,3 @@ def search_results(request):
         message = "You haven't searched for any term "
         return render(request, 'all-photo/search.html',{"message":message})
 
-def image(request,image_id):
-         try:
-             image = Image.objects.get(id = image_id)
-
-         except DoesNotExist:
-             raise Http404() 
-         return render(request,"all-photo/image.html",{"images":image})
-
-def filter_by_location(request,location_id):
-        """
-        Function that filters images by location
-        """
-        images = Image.filter_by_location(id=location_id )
-        return render (request, 'location.html', {"images":images})
-   
