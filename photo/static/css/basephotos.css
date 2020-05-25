@@ -1,0 +1,43 @@
+h1{
+    color:purple;
+    text-align: center;letter-spacing: normal;
+}
+h2{
+  font-size: 70px;
+}
+body{
+  background-color: black;
+}
+
+.index {
+    column-count: 2;
+}
+
+a{
+  font-size: 30px;
+}
+.jumbotron{
+  background-color:purple ;
+}
+.overlay{
+  background-color: blue;
+}
+.well{
+
+}
+#container{
+background-color: black ;
+}
+#container1{
+position: relative;
+text-align: center;
+color: white;
+background-color: black;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
