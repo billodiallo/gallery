@@ -26,4 +26,10 @@ def image(request,image_id):
              raise Http404() 
          return render(request,"all-photo/image.html",{"images":image})
 
-   
+def filter_by_location(request,location_id):
+        """
+        Function that filters images by location
+        """
+        images = Image.filter_by_location(id=location_id )
+        return render (request, 'location.html', {"images":images})
+  
